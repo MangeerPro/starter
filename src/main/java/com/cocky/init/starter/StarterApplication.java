@@ -18,8 +18,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 public class StarterApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext applicationContext = SpringApplication.run(StarterApplication.class, args);
-		UserService uService = applicationContext.getBean(UserService.class);
-		uService.getUsers();
+		SpringApplication.run(StarterApplication.class, args);
 	}
 }

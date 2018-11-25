@@ -1,12 +1,12 @@
 package com.cocky.init.service;
 
+import java.util.List;
+
 import com.cocky.init.dao.UserRepository;
 import com.cocky.init.po.User;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
-import java.util.List;
 
 /**
  * UserService
@@ -14,7 +14,7 @@ import java.util.List;
 @Service
 public class UserService {
 
-    @Resource
+    @Autowired
     private UserRepository repository;
 
     public List<User> getUsers() {
