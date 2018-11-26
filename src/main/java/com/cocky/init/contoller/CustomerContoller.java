@@ -29,7 +29,7 @@ public class CustomerContoller {
     public Page<Customer> query(@RequestParam(value = "page", defaultValue = "0")Integer page,
             @RequestParam(value = "size", defaultValue = "15")Integer size) {
         Sort sort = new Sort(Direction.DESC, "id");        
-        Pageable pageable = new PageRequest(page, size, sort);
+        Pageable pageable = new PageRequest(page.intValue(), size.intValue(), sort);
         return customerService.findallPage(pageable);
     }
     

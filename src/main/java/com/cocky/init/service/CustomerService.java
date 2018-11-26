@@ -13,7 +13,7 @@ public interface CustomerService {
  
     /**
      *  查询全部
-     * @return
+     * @return List<Customer>
      */
     public List<Customer> query();
     
