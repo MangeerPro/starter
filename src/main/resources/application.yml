@@ -13,3 +13,5 @@ spring:
       maximum-pool-size: 15
       auto-commit: false
       pool-name: HikariCP
+server: 
+  port: 8000

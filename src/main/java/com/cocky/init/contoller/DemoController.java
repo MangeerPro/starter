@@ -12,12 +12,8 @@ import java.util.List;
 @RequestMapping("/demo")
 public class DemoController {
 
-    private UserService userService;
-
     @Autowired
-    private void setUserService(UserService userService) {
-        this.userService = userService;
-    }
+    private UserService userService;
 
     @RequestMapping("query")
     public List<User> query() {
