@@ -1,4 +1,4 @@
-spring:
+spring: 
   datasource:
     url: jdbc:mariadb://144.168.59.111:3306/test?useUnicode=true&characterEncoding=utf-8
     username: test
@@ -15,6 +15,7 @@ spring:
       pool-name: HikariCP
   jpa: 
     show-sql: true
+    open-in-view: true
 server: 
   port: 8090
 logging: 
