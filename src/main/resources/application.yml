@@ -1,4 +1,8 @@
 spring: 
+  profiles: development
+  devtools: 
+    restart: 
+      exclude: static/**
   datasource:
     url: jdbc:mariadb://144.168.59.111:3306/test?useUnicode=true&characterEncoding=utf-8
     username: test
