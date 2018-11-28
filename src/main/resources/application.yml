@@ -19,3 +19,5 @@ server:
   port: 8090
 logging: 
   config: classpath:config/logback.xml
+  path: log
+  

@@ -1,12 +1,13 @@
 package com.cocky.init.dao;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+
 import com.cocky.init.po.User;
-import org.springframework.data.repository.CrudRepository;
 
 /**
  * Default Repository
  */
-public interface UserRepository extends CrudRepository<User, Integer> {
+public interface UserRepository extends JpaRepository<User, Integer> {
    
 }
 

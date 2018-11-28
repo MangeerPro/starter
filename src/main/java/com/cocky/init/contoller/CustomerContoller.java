@@ -28,8 +28,8 @@ public class CustomerContoller {
     @RequestMapping("query")
     public Page<Customer> query(@RequestParam(value = "page", defaultValue = "0")Integer page,
             @RequestParam(value = "size", defaultValue = "15")Integer size) {
-        Sort sort = new Sort(Direction.DESC, "id");        
-        Pageable pageable = new PageRequest(page.intValue(), size.intValue(), sort);
+        Sort sort = new Sort(Direction.DESC, "id"); 
+		Pageable pageable = PageRequest.of(page.intValue(), size.intValue(), sort);
         return customerService.findallPage(pageable);
     }
     

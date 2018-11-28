@@ -1,11 +1,11 @@
 package com.cocky.init.dao;
 
-import com.cocky.init.po.Customer;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import org.springframework.data.repository.PagingAndSortingRepository;
+import com.cocky.init.po.Customer;
 /**
  * CustomRepository
  */
-public interface CustomerRepository extends PagingAndSortingRepository <Customer, Long>{
+public interface CustomerRepository extends JpaRepository<Customer, Long> {
 
 }
