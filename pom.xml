@@ -115,9 +115,9 @@
 
 	<profiles>
 		<profile>
-			<id>prod</id>
+			<id>dev</id>
 			<properties>
-				<hello>world</hello>
+				<activeProfiles>dev</activeProfiles>
 			</properties>
 			<activation>
 				<activeByDefault>true</activeByDefault>
@@ -126,7 +126,7 @@
 		<profile>
 			<id>test</id>
 			<properties>
-				<hello>andy</hello>
+				<activeProfiles>test</activeProfiles>
 			</properties>
 		</profile>
 	</profiles>
