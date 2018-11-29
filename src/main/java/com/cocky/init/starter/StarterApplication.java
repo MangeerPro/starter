@@ -12,7 +12,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableJpaRepositories("com.cocky.init.dao")
 @EntityScan("com.cocky.init.po")
 @EnableWebMvc
-public class StarterApplication {
+public class StarterApplication {	
 
 	public static void main(String[] args) {
 		SpringApplication.run(StarterApplication.class, args);

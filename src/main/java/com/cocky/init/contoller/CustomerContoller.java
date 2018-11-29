@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/customer")
 public class CustomerContoller {
-
+    
     @Autowired
     private CustomerService customerService;
 
