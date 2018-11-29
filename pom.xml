@@ -113,5 +113,21 @@
 		</repository>
 	</repositories>
 
-
+	<profiles>
+		<profile>
+			<id>prod</id>
+			<properties>
+				<hello>world</hello>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		<profile>
+			<id>test</id>
+			<properties>
+				<hello>andy</hello>
+			</properties>
+		</profile>
+	</profiles>
 </project>

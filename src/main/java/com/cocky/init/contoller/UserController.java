@@ -23,6 +23,7 @@ public class UserController {
     @RequestMapping("query")
     public List<User> query() {
         List<User> users = userService.getUsers();
+        logger.info(users.toString());
         return users;
     }
 
