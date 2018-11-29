@@ -1,5 +1,4 @@
 spring: 
-  profiles: development
   devtools: 
     restart: 
       exclude: static/**
@@ -25,4 +24,5 @@ server:
 logging: 
   config: classpath:config/logback.xml
   path: log
+  
   
