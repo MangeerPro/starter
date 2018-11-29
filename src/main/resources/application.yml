@@ -19,10 +19,19 @@ spring:
   jpa: 
     show-sql: true
     open-in-view: true
+    properties:
+      hibernate: 
+        formate_sql: true
 server: 
   port: 8090
 logging: 
   config: classpath:config/logback.xml
   path: log
-  
-  
+  level: 
+    org: 
+      hibernate:
+        SQL: DEBUG
+        type: 
+          descriptor:
+           sql:
+            BasicBinder: TRACE
