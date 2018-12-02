@@ -11,10 +11,11 @@ import com.cocky.init.po.Balance;
 
 public interface BalanceRepository extends JpaRepository<Balance, Integer> {
 	
-/*	@Modifying
 	@Transactional
-	@Query("update balance b set b.balance = :transferAmount where b.name = :name ")
-	Balance update(String name, BigDecimal transferAmount);
-	*/
-	
+	@Modifying(clearAutomatically = true)
+	@Query("update Balance b set b.balance = :transferAmount where b.name = :name ")
+	Integer update(String name, BigDecimal transferAmount);
+
+	@Query(value = "select b.* from balance b where b.name = :name for update", nativeQuery = true)
+	Balance getBalance(String name);
 }

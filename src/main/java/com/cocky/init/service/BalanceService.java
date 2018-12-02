@@ -6,7 +6,7 @@ import com.cocky.init.po.Balance;
 
 public interface BalanceService {
 	
-	//public Balance add(String name, BigDecimal transferAmount);
-	
-	public Balance queryByName(String name);
+	Balance queryByName(String name);
+
+	Integer update(String inName, String outName, BigDecimal transferAmount);
 }
