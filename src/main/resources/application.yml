@@ -1,4 +1,10 @@
+spring:
+ profiles: 
+  active: '@activeProfiles@'
+
+---
 spring: 
+  profiles: dev
   devtools: 
     restart: 
       exclude: static/**
